@@ -1,4 +1,6 @@
-with import <nixpkgs> {}; stdenv.mkDerivation {
+{ stdenv, gcc }:
+
+stdenv.mkDerivation {
   name = "hello-world";
 
   # Source Code
