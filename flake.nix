@@ -22,6 +22,7 @@
           opencomposite = pkgs.callPackage ./pkgs/opencomposite/default.nix {
             opencomposite = pkgs.opencomposite; # pass original package
           };
+          hello-world = pkgs.callPackage ./pkgs/hello-world/default.nix { };
         in
         {
           inherit opencomposite;
