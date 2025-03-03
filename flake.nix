@@ -25,7 +25,7 @@
           hello-world = pkgs.callPackage ./pkgs/hello-world/default.nix { };
         in
         {
-          inherit opencomposite;
+          inherit opencomposite hello-world;
           default = opencomposite;
         }
       );
