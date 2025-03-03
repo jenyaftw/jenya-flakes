@@ -1,4 +1,4 @@
-{ stdenv, gcc }:
+{ stdenv, gcc, coreutils }:
 
 stdenv.mkDerivation {
   name = "hello-world";
