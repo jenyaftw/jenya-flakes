@@ -10,7 +10,6 @@
     let
       systems = [ "x86_64-linux" ];
       forAllSystems = nixpkgs.lib.genAttrs systems;
-      inputs = [ "./pkgs/opencomposite/default.nix" ];
     in
     {
       # Import our custom opencomposite package
