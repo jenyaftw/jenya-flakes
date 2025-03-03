@@ -1,6 +1,8 @@
 { lib, fetchFromGitLab, opencomposite }:
 
 opencomposite.overrideAttrs (oldAttrs: {
+  version = "jenya"
+
   src = fetchFromGitLab {
     owner = "znixian";
     repo = "OpenOVR";
