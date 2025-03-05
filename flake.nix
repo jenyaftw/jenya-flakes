@@ -23,6 +23,7 @@
             opencomposite = pkgs.opencomposite; # pass original package
           };
 	  wivrn = pkgs.callPackage ./pkgs/wivrn/default.nix {
+            inherit opencomposite;
             wivrn = pkgs.wivrn;
 	  };
           hello-world = pkgs.callPackage ./pkgs/hello-world/default.nix { };

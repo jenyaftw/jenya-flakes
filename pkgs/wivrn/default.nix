@@ -1,4 +1,4 @@
-{ lib, wivrn, fetchFromGitHub }:
+{ lib, wivrn, opencomposite, fetchFromGitHub }:
 
 wivrn.overrideAttrs (oldAttrs: {
   version = "jenya";
@@ -11,4 +11,5 @@ wivrn.overrideAttrs (oldAttrs: {
   };
 
   cudaSupport = true;
+  opencomposite = opencomposite;
 })
