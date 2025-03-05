@@ -29,7 +29,7 @@
         in
         {
           inherit opencomposite wivrn hello-world;
-          default = opencomposite;
+          default = wivrn;
         }
       );
 
